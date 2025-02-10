@@ -1,0 +1,42 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+@font-face {
+  font-family: "akatab";
+  src: url("/Akatab.ttf");
+} */
+
+/* #d8d3c3  #344443  #afb2a7  #898b82  #949b9c  #61625e  #6f766f  #4a5d4a  */
+
+/* Colore verde:     #344443
+  color bedge:      #d8d3c3 
+  color verde claro: #4a5d4a  */
+
+/* Reset basico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 1.6;
+  /* background-color: rgba(245, 241, 240); */
+  /* background-color: #898b82; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Aboreto", sans-serif;
+}
+
+p,
+a {
+  font-family: "akatab", sans-serif;
+}

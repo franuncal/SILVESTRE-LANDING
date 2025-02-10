@@ -1,0 +1,95 @@
+/* Nosotros */
+.nosotros {
+  padding: 100px 20px;
+  background-color: #d8d3c3;
+}
+
+.nosotros .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nosotros .text-title {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.nosotros .text-description {
+  text-align: left;
+}
+
+.nosotros .text-title h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #344443;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.nosotros .text-description p {
+  font-size: 1.2rem;
+  color: #4a5d4a;
+  line-height: 1.6;
+  max-width: 100%;
+  text-align: justify;
+}
+
+.nosotros-img {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  height: 500px;
+}
+
+.nosotros-img img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave de transición */
+}
+
+.nosotros-img img:hover {
+  transform: scale(1.05); /* Escala la imagen un poco al pasar el cursor */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Sombra más profunda al hacer hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .nosotros .container {
+    flex-direction: column; /* Cambia el layout a columna en pantallas pequeñas */
+    text-align: center; /* Centra el texto */
+  }
+
+  .nosotros .text-title h2 {
+    font-size: 2rem; /* Ajusta el tamaño del título */
+    /* text-align: start; */
+  }
+
+  .nosotros .text-description p {
+    font-size: 1rem; /* Ajusta el tamaño del texto */
+    /* text-align: center; */
+  }
+  .nosotros-img {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .nosotros .text-title h2 {
+    font-size: 1.8rem; /* Ajusta el tamaño del título para pantallas medianas */
+  }
+
+  .nosotros .text-description p {
+    font-size: 1.1rem; /* Ajusta el tamaño del texto para pantallas medianas */
+  }
+
+  .nosotros-img {
+    display: none;
+  }
+}

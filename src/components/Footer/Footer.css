@@ -1,0 +1,120 @@
+/* Footer */
+.footer {
+  background-color: #344443;
+  padding: 2rem 1rem;
+  color: #d8d3c3; /* Texto blanco para contraste */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center; /* Centra las columnas horizontalmente */
+  align-items: flex-start; /* Alinea las columnas en la parte superior */
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px; /* Ajusté el tamaño mínimo de las columnas */
+  max-width: 350px; /* Asegura que las columnas no se hagan demasiado anchas */
+  text-align: center; /* Centra el contenido dentro de las columnas */
+}
+
+.footer-column h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #d8d3c3;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #a19d8f; /* Color verde utilizado en tu landing */
+}
+
+.footer-column p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Centra los íconos de redes sociales */
+  gap: 1rem;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #d8d3c3;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #718353; /* Color verde para hover */
+}
+
+/* Tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: #333; /* Color principal del texto */
+  transition: color 0.3s ease; /* Efecto en el color del texto */
+}
+
+.tooltip::after {
+  content: attr(data-tooltip); /* El texto que aparece en la burbuja */
+  position: absolute;
+  bottom: 100%; /* Aparece arriba del elemento */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(137, 139, 130, 0.9); /* Fondo más oscuro y suave */
+  color: white;
+  padding: 12px 20px; /* Más espacio horizontal */
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.3s ease;
+  width: auto;
+  max-width: 350px; /* Ancho máximo mayor */
+  white-space: normal; /* Permitimos que el texto ocupe más de una línea */
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  z-index: 100;
+}
+
+/* Animación del tooltip */
+.tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-10px); /* Desplazamiento hacia arriba con suavidad */
+}
+
+/* Cambio de color cuando se pasa el mouse sobre el enlace */
+.tooltip:hover {
+  color: #5f6368; /* Color más oscuro cuando el usuario pasa el mouse */
+}
+
+/* Efecto de sombra del tooltip */
+.tooltip:hover::after {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
