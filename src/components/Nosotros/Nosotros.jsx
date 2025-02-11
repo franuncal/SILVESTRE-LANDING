@@ -9,7 +9,7 @@ const Nosotros = () => {
           <h2>Bienvenidos a SILVESTRE</h2>
           <div className="text-description">
             <p>
-              Somos una familia <strong>Mercedina</strong> , apasionada por la
+              Somos una familia <strong>Mercedina</strong>,apasionada por la
               producción y dedicada a la elaboración del{" "}
               <strong>DULCE de LECHE</strong> mas exquisito, siguiendo una
               receta tradicional de ha pasado de generación en generación.{" "}
@@ -17,11 +17,12 @@ const Nosotros = () => {
               <strong>Suipacha-Mercedes</strong>, en el corazón de la provincia
               de Buenos Aires, donde nuestros animales se alimentan de manera
               natural permitiendo la obtencion de leche de excelente calidad
-              para el desarrollo de nuestros producto. <br /> Nuestro{" "}
-              <strong>dulce de leche 100% artesanal</strong> realizado con
-              dedicación y amor, es una experiencia única de sabores, balance
-              entre <strong>cremosidad y dulzura</strong> , siendo también un
-              producto <strong>libre de gluten</strong>.
+              para el desarrollo de nuestros producto.
+              <br />
+              Nuestro <strong>dulce de leche 100% artesanal</strong> realizado
+              con dedicación y amor, es una experiencia única de sabores,
+              balance entre <strong>cremosidad y dulzura</strong>, siendo
+              también un producto <strong>libre de gluten</strong>.
             </p>
           </div>
         </div>
