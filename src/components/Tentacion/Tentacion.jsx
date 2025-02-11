@@ -25,9 +25,9 @@ const Tentacion = () => {
             <strong>#MomentosSilvestres!</strong>
           </p>
           <div className="cta-buttons-container">
-            <a href="#puntos-de-venta" className="cta-button-t">
+            {/* <a href="#puntos-de-venta" className="cta-button-t">
               Puntos de Venta
-            </a>
+            </a> */}
             <a
               href="https://silvestreddl.mitiendanube.com/"
               className="cta-button-t"

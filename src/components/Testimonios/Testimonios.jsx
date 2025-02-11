@@ -22,11 +22,11 @@ const Testimonios = () => {
       autor: "Carlos Martínez",
       estrellas: 5,
     },
-    {
-      texto: "Sabor único. El dulce de leche!!",
-      autor: "Sofi Lopez",
-      estrellas: 5,
-    },
+    // {
+    //   texto: "Sabor único. El dulce de leche!!",
+    //   autor: "Sofi Lopez",
+    //   estrellas: 5,
+    // },
   ];
 
   const [indiceActual, setIndiceActual] = useState(0);
