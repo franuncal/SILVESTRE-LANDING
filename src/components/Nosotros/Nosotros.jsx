@@ -9,7 +9,7 @@ const Nosotros = () => {
           <h2>Bienvenidos a SILVESTRE</h2>
           <div className="text-description">
             <p>
-              Somos una familia <strong>Mercedina</strong>,apasionada por la
+              Somos una familia <strong>Mercedina</strong>, apasionada por la
               producción y dedicada a la elaboración del{" "}
               <strong>DULCE de LECHE</strong> mas exquisito, siguiendo una
               receta tradicional de ha pasado de generación en generación.{" "}
@@ -19,10 +19,13 @@ const Nosotros = () => {
               natural permitiendo la obtencion de leche de excelente calidad
               para el desarrollo de nuestros producto.
               <br />
-              Nuestro <strong>dulce de leche 100% artesanal</strong> realizado
-              con dedicación y amor, es una experiencia única de sabores,
-              balance entre <strong>cremosidad y dulzura</strong>, siendo
-              también un producto <strong>libre de gluten</strong>.
+              <br />
+              <strong>
+                Nuestro dulce de leche 100% artesanal realizado con dedicación y
+                amor, es una experiencia única de sabores, balance entre
+                cremosidad y dulzura, siendo también un producto libre de
+                gluten.
+              </strong>
             </p>
           </div>
         </div>
