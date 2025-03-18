@@ -18,8 +18,7 @@ const Tentacion = () => {
           <p className="tentate-description">
             Sabemos lo difícil que es decirle que no a nuestro dulce de leche
             artesanal. Si ya estás viendo el fondo de tu pote, es el momento
-            perfecto para acercarte a uno de nuestros puntos de venta o tienda
-            online.
+            perfecto para acceder a nuestra tienda online.
             <br />
             <strong>¡Llenemos juntos tus días de</strong> <br />
             <strong>#MomentosSilvestres!</strong>
