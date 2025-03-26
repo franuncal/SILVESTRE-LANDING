@@ -12,12 +12,12 @@ const Nosotros = () => {
               Somos una familia <strong>Mercedina</strong>, apasionada por la
               producción y dedicada a la elaboración del{" "}
               <strong>DULCE de LECHE</strong> mas exquisito, siguiendo una
-              receta tradicional de ha pasado de generación en generación.{" "}
+              receta tradicional que ha pasado de generación en generación.{" "}
               <br /> El establecimiento se encuentra en la cuenca lechera{" "}
               <strong>Suipacha-Mercedes</strong>, en el corazón de la provincia
               de Buenos Aires, donde nuestros animales se alimentan de manera
-              natural permitiendo la obtencion de leche de excelente calidad
-              para el desarrollo de nuestros producto.
+              natural, permitiendo la obtencion de leche de excelente calidad
+              para el desarrollo de nuestros productos.
               <br />
               <br />
               <strong>
