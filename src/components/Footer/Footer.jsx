@@ -66,6 +66,16 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <p className="footer-dev">
+        Desarrollado por{" "}
+        <a
+          href="https://unquidev.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          unqui
+        </a>
+      </p>
     </footer>
   );
 };

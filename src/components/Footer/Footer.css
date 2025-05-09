@@ -118,3 +118,14 @@
 .tooltip:hover::after {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
 }
+.footer-dev {
+  text-align: center;
+  font-size: 0.7rem;
+  opacity: 0.5;
+  margin-top: 0.9rem;
+}
+
+.footer-dev a {
+  color: inherit;
+  text-decoration: underline dotted;
+}
