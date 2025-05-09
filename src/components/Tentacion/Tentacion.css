@@ -82,9 +82,9 @@
 }
 
 .cta-button-t:hover {
-  background-color: #d8d3c3;
+  background-color: #344443;
   transform: scale(1.1);
-  color: #344443;
+  color: #d8d3c3;
 }
 
 /* Media Queries */

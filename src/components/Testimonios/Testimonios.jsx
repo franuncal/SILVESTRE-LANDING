@@ -7,26 +7,26 @@ const Testimonios = () => {
     {
       texto:
         "El mejor dulce de leche que he probado en mi vida. ¡Totalmente recomendado!",
-      autor: "Juan Pérez",
+      autor: "Juan Cruz Diaz",
       estrellas: 5,
     },
     {
       texto:
         "Sin lugar a dudas, es el mejor dulce de leche que he probado. ¡5 estrellas!",
-      autor: "Ana Gómez",
+      autor: "Ana Gómez Lorenzo",
       estrellas: 5,
     },
     {
       texto:
         "Increíblemente delicioso. El dulce de leche es de una calidad insuperable.",
-      autor: "Carlos Martínez",
+      autor: "Carlos Rodriguez",
       estrellas: 5,
     },
-    // {
-    //   texto: "Sabor único. El dulce de leche!!",
-    //   autor: "Sofi Lopez",
-    //   estrellas: 5,
-    // },
+    {
+      texto: "Sabor único. El mejor dulce de leche!!",
+      autor: "Sofi Longo",
+      estrellas: 5,
+    },
   ];
 
   const [indiceActual, setIndiceActual] = useState(0);
@@ -51,7 +51,7 @@ const Testimonios = () => {
 
   return (
     <section id="testimonios" className="section">
-      {/* <h2>Testimonios</h2> */}
+      <h2>Nuestros Clientes 😋</h2>
       <div className="carousel-container">
         <button className="carousel-btn left" onClick={anteriorTestimonio}>
           <FaChevronLeft />
