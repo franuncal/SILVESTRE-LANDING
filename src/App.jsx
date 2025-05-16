@@ -4,7 +4,6 @@ import Nosotros from "./components/Nosotros/Nosotros";
 import Productos from "./components/Productos/Productos";
 import Tentacion from "./components/Tentacion/Tentacion";
 import Procesos from "./components/Procesos/Procesos";
-// import PuntosDeVenta from "./components/PuntosDeVenta/PuntosDeVenta";
 import Testimonios from "./components/Testimonios/Testimonios";
 import Footer from "./components/Footer/Footer";
 import "../src/App.css";
@@ -18,7 +17,6 @@ function App() {
       <Productos />
       <Tentacion />
       <Procesos />
-      {/* <PuntosDeVenta /> */}
       <Testimonios />
       <Footer />
     </>
