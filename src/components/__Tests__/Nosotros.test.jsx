@@ -21,7 +21,7 @@ describe("Nosotros", () => {
   test("muestra la imagen con el alt correcto", () => {
     render(<Nosotros />);
     const imagen = screen.getByAltText(
-      /nuestra historia - dulce de leche silvestre/i
+      /Nuestra historia - Dulce de Leche Silvestre/i
     );
     expect(imagen).toBeInTheDocument();
   });
