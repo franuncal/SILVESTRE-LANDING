@@ -25,9 +25,9 @@ describe("Tentacion", () => {
     expect(videos.length).toBe(1);
 
     const videoEl = videos[0];
-    expect(videoEl).toHaveAttribute("autoPlay");
-    expect(videoEl).toHaveAttribute("muted");
-    expect(videoEl).toHaveAttribute("loop");
+    expect(videoEl.autoplay).toBe(true);
+    expect(videoEl.muted).toBe(true);
+    expect(videoEl.loop).toBe(true);
   });
 
   test("existe botón Tienda Online con enlace correcto y target _blank", () => {

@@ -11,13 +11,21 @@ const Header = () => {
       <img className="logo" src={logo} alt="Logo Dulce de Leche - Silvestre" />
 
       {/* Botón para abrir menú */}
-      <button className="abrir-menu" onClick={() => setMenuAbierto(true)}>
+      <button
+        className="abrir-menu"
+        onClick={() => setMenuAbierto(true)}
+        aria-label="Abrir menú"
+      >
         <FaBars />
       </button>
 
       <nav className={menuAbierto ? "nav active" : "nav"}>
         {/* Botón para cerrar menú */}
-        <button className="cerrar-menu" onClick={() => setMenuAbierto(false)}>
+        <button
+          className="cerrar-menu"
+          onClick={() => setMenuAbierto(false)}
+          aria-label="Cerrar menú"
+        >
           <FaTimes />
         </button>
 
@@ -42,6 +50,8 @@ const Header = () => {
               href="https://silvestreddl.mitiendanube.com/"
               target="_blank"
               className="store-link"
+              rel="noopener noreferrer"
+              aria-label="Ir a la tienda online"
             >
               <FaShoppingCart />
             </a>

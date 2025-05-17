@@ -19,16 +19,27 @@ describe("Header", () => {
 
   test("renderiza el botón de abrir menú", () => {
     render(<Header />);
-    const botonAbrir = screen.getByRole("button");
+    const botonAbrir = screen.getByRole("button", { name: /abrir menú/i });
     expect(botonAbrir).toBeInTheDocument();
   });
 
   test("abre y cierra el menú correctamente", () => {
     render(<Header />);
-    const botonAbrir = screen.getByRole("button");
+
+    const botonAbrir = screen.getByRole("button", { name: /abrir menú/i });
     fireEvent.click(botonAbrir);
-    const botonCerrar = screen.getByRole("button");
+
+    // Verifico que el nav tenga clase "active"
+    const nav = screen.getByRole("navigation");
+    expect(nav).toHaveClass("active");
+
+    const botonCerrar = screen.getByRole("button", { name: /cerrar menú/i });
     expect(botonCerrar).toBeInTheDocument();
+
+    fireEvent.click(botonCerrar);
+
+    // Verifico que el nav ya no tenga clase "active"
+    expect(nav).not.toHaveClass("active");
   });
 
   test("muestra enlace a 'Nosotros'", () => {
@@ -39,12 +50,12 @@ describe("Header", () => {
 
   test("muestra ícono del carrito con link a tienda", () => {
     render(<Header />);
-    const linkCarrito = screen.getByRole("link", {
-      name: "",
-    }); // sin texto, solo ícono
-    expect(linkCarrito).toHaveAttribute(
-      "href",
-      "https://silvestreddl.mitiendanube.com/"
+    const links = screen.getAllByRole("link");
+    const linkCarrito = links.find(
+      (link) =>
+        link.getAttribute("href") === "https://silvestreddl.mitiendanube.com/"
     );
+    expect(linkCarrito).toBeInTheDocument();
+    expect(linkCarrito).toHaveAttribute("target", "_blank");
   });
 });

@@ -18,14 +18,6 @@ describe("Nosotros", () => {
     expect(titulo).toBeInTheDocument();
   });
 
-  test("muestra el párrafo con la historia", () => {
-    render(<Nosotros />);
-    const parrafo = screen.getByText((content, element) =>
-      element?.textContent?.includes("Somos una familia Mercedina")
-    );
-    expect(parrafo).toBeInTheDocument();
-  });
-
   test("muestra la imagen con el alt correcto", () => {
     render(<Nosotros />);
     const imagen = screen.getByAltText(

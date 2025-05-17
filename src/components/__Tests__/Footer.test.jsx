@@ -18,9 +18,10 @@ describe("Footer", () => {
 
   test("muestra el número de WhatsApp con el enlace correcto", () => {
     render(<Footer />);
-    const whatsappLink = screen.getByRole("link", {
-      name: /2324581612/i,
-    });
+    const links = screen.getAllByRole("link", { name: /2324581612/i });
+    // filtramos el que tiene el href de WhatsApp
+    const whatsappLink = links.find((link) => link.href.includes("wa.me"));
+    expect(whatsappLink).toBeInTheDocument();
     expect(whatsappLink).toHaveAttribute(
       "href",
       expect.stringContaining("wa.me")
