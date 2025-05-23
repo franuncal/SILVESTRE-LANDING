@@ -1,0 +1,64 @@
+Resumen del proceso de testing
+
+# Para asegurar la calidad y el correcto funcionamiento de cada sección de la landing page, se implementaron tests unitarios utilizando React Testing Library junto con Vitest como entorno de pruebas. 
+
+# Cada componente fue testeado individualmente con foco en:
+
+- Renderizado correcto de títulos, textos e imágenes.
+- Presencia y comportamiento de enlaces, botones e íconos interactivos.
+- Atributos importantes como href, target, alt, autoplay, loop, entre otros.
+- Simulación de interacciones como clics en botones y toggles de menú.
+
+Las pruebas permitieron verificar no solo la estructura visual de la página, sino también la experiencia del usuario en aspectos clave como navegación, accesibilidad y llamados a la acción. 
+En conjunto, aportan robustez al desarrollo, mejorando la mantenibilidad del proyecto y sumando valor técnico
+
+
+
+Este archivo contiene pruebas automáticas hechas con React Testing Library, que sirven para verificar que el componente `Banner` funcione como se espera.
+
+
+///
+import { render, screen } from "@testing-library/react";
+import Banner from "../Banner/Banner";
+
+-   render: Monta el componente en un entorno de pruebas.
+-   screen: Permite buscar elementos dentro del componente renderizado.
+-   Banner: Es el componente que estamos probando.
+
+
+///
+# describe("Banner", () => {
+  // aquí van las pruebas
+});
+
+describe: Agrupa varias pruebas relacionadas al mismo componente. Ayuda a organizar y leer mejor los tests.
+
+Monta el componente.
+-   Busca un título (<h1>) que contenga “silvestre” (sin importar mayúsculas/minúsculas).
+-   Verifica que esté presente en el DOM (la pantalla renderizada).
+
+
+///
+test("muestra el subtítulo Dulce de Leche Artesanal", () => {
+  render(<Banner />);
+  const subtitulo = screen.getByRole("heading", {
+    level: 2,
+    name: /dulce de leche artesanal/i,
+  });
+  expect(subtitulo).toBeInTheDocument();
+});
+
+Qué hace:
+-   Busca un subtítulo (<h2>) con el texto “Dulce de Leche Artesanal”.
+-   Verifica que esté presente en el DOM.
+
+///
+test("el botón lleva al id productos", () => {
+  render(<Banner />);
+  const boton = screen.getByRole("link", { name: /descubre más/i });
+  expect(boton).toHaveAttribute("href", "#productos");
+});
+
+Qué hace:
+-   Busca un enlace (<a>) con el texto “Descubre más”.
+-   Verifica que tenga el atributo href="#productos", lo que indica que lleva a esa sección de la página.
