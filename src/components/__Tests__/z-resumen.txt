@@ -13,7 +13,6 @@ Las pruebas permitieron verificar no solo la estructura visual de la página, si
 En conjunto, aportan robustez al desarrollo, mejorando la mantenibilidad del proyecto y sumando valor técnico
 
 
-
 Este archivo contiene pruebas automáticas hechas con React Testing Library, que sirven para verificar que el componente `Banner` funcione como se espera.
 
 
