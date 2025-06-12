@@ -47,7 +47,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="https://silvestreddl.mitiendanube.com/"
+              href="https://tienda.pecanesmercedinos.com.ar/productos/dulce-de-leche-artesanal-silvestre/"
               target="_blank"
               className="store-link"
               rel="noopener noreferrer"
